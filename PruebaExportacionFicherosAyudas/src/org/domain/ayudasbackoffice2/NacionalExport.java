@@ -82,7 +82,7 @@ public class NacionalExport {
 		Connection connection = null;
 		try {
 			// DESARROLLO
-			connection = DriverManager.getConnection("jdbc:oracle:thin:@otdesa-scan.oepm.local:1523:oltpdesa2", "GESTAYUDAS", "Oenu857HNByhf");
+			connection = DriverManager.getConnection("", "", "");
 		} catch (SQLException e) {
 			System.out.println("Conexi�n a BD fallida");
 			e.printStackTrace();
@@ -132,9 +132,9 @@ public class NacionalExport {
 	
 	public static RepositorioDocumentalFGWS abrirConexionUCM() {
         // DESARROLLO
-    	String userUcm = "App_Ayudas2_GD_DES";        
-      String passUcm = "App_Ayudas2_GD_DES01";
-      String urlUcm = "http://pruebaucm.oepm.local/aInterfazWSUCM11gFGMTOM/RepositorioDocumentalFGWSService?WSDL";
+    	String userUcm = "";        
+      String passUcm = "";
+      String urlUcm = "";
         
         URL url;
 		try {
@@ -161,8 +161,8 @@ public class NacionalExport {
         MetadatosGenericosFG metaGen = new MetadatosGenericosFG();
 
         // DESARROLLO
-    	String userUcm = "App_Ayudas2_GD_DES";        
-       String passUcm = "App_Ayudas2_GD_DES01";
+    	String userUcm = "";        
+       String passUcm = "";
         
         metaGen.setUsuario(userUcm);
         metaGen.setPassword(passUcm);
